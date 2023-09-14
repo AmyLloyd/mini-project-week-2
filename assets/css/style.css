@@ -1,49 +1,94 @@
-*{
-    box-sizing: border-box;
-    background-color: #323235;
+:root {
+    --brandpurple: #954ed8;
+    --background-gray: #323235;
 }
 
-body {font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
+    background-color: var(--background-gray);
+    
+}
+
+main {
+    width: 96%;
+    margin: 2rem auto;
+}
+
+header {
+    width: 96%;
+    padding: 2rem 2rem 4rem 2rem; 
+    text-align: center;
+    margin 0 auto;
 }
 
 footer {
     font-family:'Courier New', Courier, monospace;
+    width: 96%;
+}
+
+.information-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    justify-content: flex-start;
+
 }
 
 .card-header {
     display: flex;
     padding: 1px 10px;
     border: 2px solid white;
-    margin: 20px;
+    margin-top: -10px;
     width: 90%;
-    justify-content: center;
-    position: absolute;
+    position: relative;
+    justify-content: left;
     top: -40px;
     left: -3px;
-    line-height: 5px;
+    background-color: var(--background-gray);
+
 }
 
-.card {
+.example {
     font-family:'Courier New', Courier, monospace;
+    background-color: var(--brandpurple);
     color:white;
-    background-color: purple;
-    justify-content: center;
+    flex-grow: 1;
     
 }
 
-.flex-container {
+
+.card {
     display: flex;
     position: relative;
-    width: 300px;
-    height: auto;
+    top: -40px;
     border: 2px dashed gray;    
     flex-direction: column;
     padding: 20px;
     margin: 40px;
-
+    justify-content: left;
+    color: var(--brandpurple);
+    flex: 1 0 33%;
+    max-width: 33%;
+    flex-grow: 1;
+    
 }
 
 h1, h2 {
-    color: blueviolet; 
+    color: var(--brandpurple); 
 }
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+
+    @media screen and (min-width: 768px) {
+        /* on tablets, set columns to only be 50% of the width and not grow */
+        .card-column {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
