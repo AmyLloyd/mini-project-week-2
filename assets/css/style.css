@@ -1,14 +1,24 @@
 *{
     box-sizing: border-box;
-    background-color: #323235;
+}
+
+:root {
+    --brandpurple: #954ed8;
 }
 
 body {font-family: Arial, Helvetica, sans-serif;
     color: white;
+    background-color: #323235;
 }
 
 footer {
     font-family:'Courier New', Courier, monospace;
+}
+
+.information-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card-header {
@@ -17,22 +27,25 @@ footer {
     border: 2px solid white;
     margin: 20px;
     width: 90%;
-    justify-content: center;
     position: absolute;
     top: -40px;
     left: -3px;
     line-height: 5px;
 }
 
-.card {
+.example {
     font-family:'Courier New', Courier, monospace;
+    background-color: var(--brandpurple);
     color:white;
-    background-color: purple;
-    justify-content: center;
     
 }
 
-.flex-container {
+
+.card {
+    color: var(--brandpurple);
+}
+
+.card {
     display: flex;
     position: relative;
     width: 300px;
@@ -41,9 +54,10 @@ footer {
     flex-direction: column;
     padding: 20px;
     margin: 40px;
+    justify-content: center;
 
 }
 
 h1, h2 {
-    color: blueviolet; 
+    color: var(--brandpurple); 
 }
