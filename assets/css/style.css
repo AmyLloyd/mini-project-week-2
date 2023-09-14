@@ -31,7 +31,6 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 96%;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     justify-content: flex-start;
@@ -69,7 +68,7 @@ footer {
     flex-direction: column;
     padding: 20px;
     margin: 40px;
-    justify-content: center;
+    justify-content: left;
     color: var(--brandpurple);
     flex: 1 0 33%;
     max-width: 33%;
