@@ -5,6 +5,18 @@
 body {font-family: Arial, Helvetica, sans-serif;
 }
 
+footer {
+    font-family:'Courier New', Courier, monospace;
+}
 
+.example {
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+    background-color: purple;
+}
 
+.card {
+    width: 300px;
+    height: auto;
+    border: 15px dashed gray;    
 }
